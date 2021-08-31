@@ -24,7 +24,7 @@
 > The leaderboard website displays scores submitted by different players. It also allows users to submit their scores. All data is preserved thanks to the external [Leaderboard API service](https://www.notion.so/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3).
  
  <p align="center">
-    <img alt="Screenshot" src="https://user-images.githubusercontent.com/80895497/131565525-53e8cacf-e50c-4efc-9092-22667ae918f1.PNG" width="500">
+    <img alt="Screenshot" src="https://user-images.githubusercontent.com/80895497/131565525-53e8cacf-e50c-4efc-9092-22667ae918f1.PNG" width="600" height="300">
     <p align="center">screen shot of the Leader Board</p>
 </p>
 

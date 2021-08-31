@@ -1,0 +1,59 @@
+body {
+  padding: 20px;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.btn {
+  width: 80px;
+  align-self: end;
+  padding: 3px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.table {
+  border: 1px solid #2e2e2e;
+}
+
+table,
+tr,
+th,
+td {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+}
+
+.scores-list,
+.form-container {
+  width: 50%;
+  height: 60vh;
+  margin: 40px;
+}
+
+form > input,
+button {
+  margin: 0.5rem;
+  padding: 5px;
+}
+
+@media screen and (max-width: 992px) {
+  .section-container {
+    padding: 5px;
+    flex-direction: column;
+  }
+
+  .scores-list,
+  .form-container {
+    width: 90vw;
+    margin: 10px;
+  }
+}

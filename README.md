@@ -29,7 +29,7 @@
 </p>
 
 # To-DO-List Live Demo
-[Visit Live demo](https://hamzaoutdoors.github.io/Leaderboard-API/)
+[Visit Live Demo Link](https://hamzaoutdoors.github.io/Leaderboard-API/)
 
 # Built with 🔨
 - HTML, CSS,

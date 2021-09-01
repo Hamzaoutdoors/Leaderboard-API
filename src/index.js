@@ -21,7 +21,7 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   postApi()
     .then(() => {
-      document.forms[0].reset();
+      e.target.reset();
     });
 });
 

@@ -19,10 +19,8 @@ refresh.addEventListener('click', () => {
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  postApi()
-    .then(() => {
-      e.target.reset();
-    });
+  postApi();
+  e.target.reset();
 });
 
 getApi(urlGame)

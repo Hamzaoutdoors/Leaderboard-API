@@ -1,4 +1,4 @@
-/* /* eslint-disable import/prefer-default-export */
+/* eslint-disable no-console */
 const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/';
 
 const createNewGame = () => {

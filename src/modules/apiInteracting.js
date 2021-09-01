@@ -13,8 +13,8 @@ const postApi = async () => {
     },
     body: JSON.stringify(
       {
-        user: userName.value,
-        score: userScore.value,
+        user: `${userName.value}`,
+        score: `${userScore.value}`,
       },
     ),
   });

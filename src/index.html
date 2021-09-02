@@ -10,16 +10,16 @@
 </head>
 
 <body>
-    <header>
+    <header class="p-3 mt-2">
         <h1>Leaderboard</h1>
     </header>
-    <section class="section-container d-flex">
-        <div class="scores-list">
+    <section class="section-container d-flex p-3">
+        <div class="scores-list justify-content-center align-items-center h-25">
             <div class="score-title d-flex justify-content-between">
                 <h2>Recent scores</h2>
-                <button type="button" class="btn btn-light">Refresh</button>
+                <button type="button" class="btn btn-light" id="refresh">Refresh</button>
             </div>
-            <table class="table table-striped">
+            <table class="table table-striped shadow">
                 <thead>
                     <tr>
                         <th scope="col">Name</th>
@@ -28,17 +28,22 @@
                 </thead>
                 <tbody id="score-table"></tbody>
             </table>
+            <div class="d-flex justify-content-center">
+                <div class="spinner-border" 
+                     role="status" id="loading">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
         </div>
         <div class="form-container">
             <h2> Add your score</h2>
-            <form class="form d-flex flex-column">
+            <form class="form d-flex flex-column" id="form">
                 <input type="text" placeholder="your name" id="name">
                 <input type="number" placeholder="your score" id="score">
                 <button type="submit" class="btn btn-light">Submit</button>
             </form>
         </div>
     </section>
-
     <script src="https://use.fontawesome.com/dbae1144e4.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">

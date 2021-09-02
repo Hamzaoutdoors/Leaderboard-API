@@ -1,43 +1,29 @@
 /* eslint-disable no-unused-vars */
-import _ from 'lodash';
+import 'lodash';
 import './style.css';
+import render from './modules/renderScores.js';
+import { postApi, getApi } from './modules/apiInteracting.js';
 
-const players = [
-  {
-    name: 'Name',
-    score: 100,
-  },
-  {
-    name: 'Hamza',
-    score: 40,
-  },
-  {
-    name: 'Larry',
-    score: 12,
-  },
-  {
-    name: 'Ewa',
-    score: 70,
-  },
-  {
-    name: 'Jacob',
-    score: 55,
-  },
-  {
-    name: 'Carlos',
-    score: 60,
-  },
-];
+const urlGame = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/VhnmOHGBsQdsWSdfuXHy/scores/';
+const form = document.getElementById('form');
+const refresh = document.getElementById('refresh');
+const table = document.getElementById('score-table');
 
-const render = () => {
-  const table = document.getElementById('score-table');
-  players.forEach((player, index) => {
-    const { name, score } = player;
-    table.innerHTML += `<tr id="user-${index}">
-    <td id="name-${index}">${name}</td>
-    <td id="score-${index}">${score}</td>
-    </tr>`;
+refresh.addEventListener('click', () => {
+  getApi(urlGame)
+    .then((response) => {
+      table.innerHTML = '';
+      render(response.result);
+    });
+});
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  postApi();
+  e.target.reset();
+});
+
+getApi(urlGame)
+  .then((res) => {
+    render(res.result);
   });
-};
-
-render();

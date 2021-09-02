@@ -32,7 +32,7 @@
 [Live Demo Link](https://hamzaoutdoors.github.io/Leaderboard-API/)
 
 # Built with 🔨
-- HTML5, CSS3,
+- HTML5, CSS3
 - JavaScript-ES6
 - Bootstrap 5
 - Git & Github

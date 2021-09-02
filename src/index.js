@@ -28,3 +28,12 @@ getApi(urlGame)
   .then((res) => {
     render(res.result);
   });
+
+icon.addEventListener('click', (e) => {
+  document.body.classList.toggle('dark-theme');
+  if (document.body.classList.contains('dark-theme')) {
+    e.target.src = 'assets/images/sun.png';
+  } else {
+    e.target.src = 'assets/images/moon.png';
+  }
+});

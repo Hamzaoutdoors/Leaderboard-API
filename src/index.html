@@ -10,8 +10,10 @@
 </head>
 
 <body>
-    <header class="p-3 mt-2">
-        <h1>Leaderboard</h1>
+    <header class="d-flex justify-content-between p-3">
+        <h1 id='header'>Leaderboard</h1>
+        <img src="assets/images/moon.png" alt="moon" class="icon"/>
+        <img src="assets/images/sun.png" alt="sun" class="icon d-none"/>
     </header>
     <section class="section-container d-flex p-3">
         <div class="scores-list justify-content-center align-items-center h-25">
@@ -29,17 +31,16 @@
                 <tbody id="score-table"></tbody>
             </table>
             <div class="d-flex justify-content-center">
-                <div class="spinner-border" 
-                     role="status" id="loading">
+                <div class="spinner-border" role="status" id="loading">
                     <span class="sr-only">Loading...</span>
                 </div>
             </div>
         </div>
-        <div class="form-container">
+        <div class="form-container my-4 p-3">
             <h2> Add your score</h2>
             <form class="form d-flex flex-column" id="form">
-                <input type="text" placeholder="your name" id="name">
-                <input type="number" placeholder="your score" id="score">
+                <input type="text" placeholder="your name" id="name" required>
+                <input type="number" placeholder="your score" id="score" required>
                 <button type="submit" class="btn btn-light">Submit</button>
             </form>
         </div>
@@ -49,4 +50,5 @@
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
     </script>
 </body>
+
 </html>

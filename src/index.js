@@ -8,6 +8,7 @@ const urlGame = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/
 const form = document.getElementById('form');
 const refresh = document.getElementById('refresh');
 const table = document.getElementById('score-table');
+const icon = document.querySelector('.icon');
 
 refresh.addEventListener('click', () => {
   getApi(urlGame)

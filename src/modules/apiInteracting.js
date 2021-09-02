@@ -26,6 +26,7 @@ const getApi = async (url) => {
   const result = await response.json();
   if (result) {
     document.getElementById('loading').style.display = 'none';
+    document.getElementById('header').classList.add('h1-decoration');
   }
   return result;
 };

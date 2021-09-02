@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 :root {
   --white-color: #fff;
@@ -35,9 +37,11 @@ header > img {
 }
 
 h1 {
-  font-weight: 700;
-  letter-spacing: 0.3rem;
-  font-size: 4rem;
+  font-family: 'Style Script', cursive;
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.4rem;
+  font-size: 4.5rem;
 }
 
 .h1-decoration {
@@ -77,7 +81,6 @@ thead {
 
 table {
   width: 400px;
-  box-shadow: ;
 }
 
 .scores-list {
@@ -100,7 +103,7 @@ button {
 @media screen and (max-width: 992px) {
   h1 {
     letter-spacing: 0.2rem;
-    font-size: 2.5rem;
+    font-size: 2.7rem;
   }
 
   header > img {

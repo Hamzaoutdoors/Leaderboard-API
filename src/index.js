@@ -4,7 +4,8 @@ import './style.css';
 import render from './modules/renderScores.js';
 import { postApi, getApi } from './modules/apiInteracting.js';
 
-const urlGame = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/VhnmOHGBsQdsWSdfuXHy/scores/';
+const urlGame = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/f5n9vuYoe82B6F8funh2/scores/';
+
 const form = document.getElementById('form');
 const refresh = document.getElementById('refresh');
 const table = document.getElementById('score-table');
@@ -20,7 +21,7 @@ refresh.addEventListener('click', () => {
 
 form.addEventListener('submit', (e) => {
   e.preventDefault();
-  postApi();
+  postApi(urlGame);
   e.target.reset();
 });
 

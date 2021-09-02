@@ -93,7 +93,7 @@ table {
 form > input,
 button {
   margin: 0.5rem;
-  padding: 5px;
+  padding: 5px 10px;
 }
 
 @media screen and (max-width: 992px) {
